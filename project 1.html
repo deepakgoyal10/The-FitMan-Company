@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitMan Company</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Rowdies';
+            margin: 0px;
+            padding: 0px;
+            background: url('image/bg1.jpg');
+            width: 100%;
+        }
+
+        .left img {
+            display: block;
+            margin: auto;
+            width: 77px;
+            filter: invert(100%)
+        }
+
+        .left div {
+            text-align: center;
+            width: 146px;
+            color: white;
+            font-size: 17px;
+            line-height: 0px;
+        }
+
+        .left {
+            margin: 0px;
+            position: absolute;
+            left: 60px;
+            top: 0x;
+            /* border: 2px solid aqua; */
+            display: inline-block;
+
+        }
+
+        .left span {
+            display: block;
+            padding: 9px 0px;
+
+        }
+
+        .mid {
+            /* border: 2px solid rgb(136, 136, 136); */
+            display: block;
+            width: 38%;
+            margin: 23px auto;
+        }
+
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 19px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            padding: 30px 31px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(107, 107, 107);
+        }
+
+        .right {
+            margin: 0px;
+            position: absolute;
+            right: 34px;
+            top: 33px;
+            display: inline-block;
+            /* border: 2px solid brown; */
+        }
+
+        .btn {
+            font-family: 'Rowdies';
+
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 4px 19px;
+            border-radius: 10px;
+            font-size: 15px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(36, 36, 36);
+
+        }
+
+        .container {
+            border: 2px solid white;
+            color: white;
+            margin: 63px 44px;
+            width: 47%;
+            padding: 57px;
+            border-radius: 28px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 464px;
+            padding: 6px;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 11px auto;
+            font-size: 20px;
+            border-radius: 14px;
+        }
+
+        .form-group input:focus {
+            background-color: rgb(203, 224, 231);
+        }
+
+
+        .container h1 {
+            text-align: center;
+        }
+
+        .container button {
+            border-radius: 14px;
+            display: block;
+            width: 481px;
+            margin: auto;
+            border: 1px solid white;
+            padding: 7px 3px;
+            font-size: 21px;
+            background-color: #121221;
+        }
+
+        .gender {
+            text-align: center;
+            display: block;
+            width: 479px;
+            padding: 6px;
+            border: 2px solid rgb(0, 0, 0);
+            margin: 0px auto;
+            font-size: 20px;
+            border-radius: 14px;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="image/icoon-removebg-preview.png" alt="">
+            <div>
+                <span> The FitMan</span>
+                <span> Company</span>
+            </div>
+        </div>
+        <!-- right box for button -->
+        <div class="right">
+            <button class="btn">Membership</button>
+            <button class="btn">Call Us Now</button>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="" class="active">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Fitness</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join us in your fitness journey </h1>
+        <form action="#">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="email" name="" placeholder="Enter Your Email">
+            </div>
+            <div class="form-group">
+                <input type="number" name="" placeholder="Enter Your age">
+            </div>
+            <div class="form-group">
+                <input type="tel" name="" placeholder="Enter Phone no.">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your locality     ">
+            </div>
+            <select class="gender" name="Gender">
+                <option value="select">--Select Gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>>
+            <button class="btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
